@@ -29,5 +29,17 @@ class Program
 		d = Disposable.Combine(mk("a2"), mk("b2"), mk("c2"));
 		d.Dispose();
 		d.Dispose();
+
+		var r = new DisposableRef();
+		r.Dispose();
+		r.Dispose();
+		r.Current = mk("first");
+		r.Dispose();
+		Console.WriteLine(r.Current == null);
+		r.Current = mk("second");
+		Console.WriteLine("setting third");
+		r.Current = mk("third");
+		r.Dispose();
+		r.Dispose();
 	}
 }
