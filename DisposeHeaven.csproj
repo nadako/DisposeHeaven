@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<LangVersion>9.0</LangVersion>
+		<AssemblyName>Nadako.DisposeHeaven</AssemblyName>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<EnableDefaultItems>false</EnableDefaultItems>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="src/**/*.cs"/>
+	</ItemGroup>
+
+</Project>
